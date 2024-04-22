@@ -41,6 +41,7 @@ print(model2.summary())
 
 model2.compile(optimizer = 'adam', loss = 'mean_squared_error')
 
+model_fit = model2.fit(x_train_scaled, y_train, epochs = 50, validation split = 0.5, verbose = 1)
 res = model2.evaluate(x_test_scaled, y_test)
 res
 
